@@ -9,17 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="ediestyle.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="home">
     <nav role="navigation">
       <div class="logo">Edie</div>
       <button class="btn btn-toggle" onClick="toggleMenu();"><i class="material-icons">menu</i></button>
       <div class="collapse" id="collapse-menu">
+        <button class="btn btn-toggle" onClick="toggleMenu();"><i class="material-icons">close</i></button>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Works</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Our Works</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -50,7 +51,7 @@
         </div>
       </section>
 
-      <section class="service-section">
+      <section class="service-section" id="services">
         <div class="title"><h1>We offer high demand services</h1></div>
         <div class="service-box-gp">
           <div class="service-box row">
@@ -87,7 +88,7 @@
         </div>
       </section>
 
-      <section class="showcase-section">
+      <section class="showcase-section" id="works">
         <div class="title">
           <h1>Good design means<br />good business</h1>
         </div>
@@ -116,7 +117,7 @@
         <div class="btn-more">see more&nbsp;&#8594;</div>
       </section>
 
-      <section class="team-section">
+      <section class="team-section" id="clients">
         <div class="left-side">
           <h3>Meet the team</h3>
           <div class="title">
@@ -136,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="bottom-section">
+      <section class="bottom-section" id="contact">
         <div class="quote">
           <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
         </div>
@@ -173,4 +174,10 @@
     </footer>
     <div class="credit">King Fung@DevChallenges.io</div>
   </body>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("collapse-menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </html>
