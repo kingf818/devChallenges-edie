@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Challenges - Edie Homepage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="ediestyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <div class="logo">Edie</div>
+      <button class="btn btn-toggle" onClick="toggleMenu();"><i class="material-icons">menu</i></button>
+      <div class="collapse" id="collapse-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main">
+      <section class="top-section">
+        <div class="title row">
+          <h4>Unhappy with your website?</h4>
+          <h1>We create beautiful<br />and fast web services</h1>
+        </div>
+
+        <div class="visual"><img src="img/heroImage.jpg" alt="main visual" /></div>
+        <div class="content row">
+          <h1>
+            Story, emotion<br />
+            and purpose
+          </h1>
+          <p>
+            We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+        </div>
+        <div class="contact row">
+          <span class="info">Want us to contact you?</span>
+          <div class="input-container">
+            <input type="text" placeholder="Email" />
+            <button class="btn blue">Join</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-section">
+        <div class="title"><h1>We offer high demand services</h1></div>
+        <div class="service-box-gp">
+          <div class="service-box row">
+            <div class="icon blue">
+              <i class="material-icons">create</i>
+            </div>
+            <div class="title"><h2>UI/UX Design</h2></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            </div>
+            <button class="btn grey">Get started</button>
+          </div>
+
+          <div class="service-box row">
+            <div class="icon green"><i class="material-icons">code</i></div>
+            <div class="title"><h2>Front End</h2></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            </div>
+            <button class="btn blue">Get started</button>
+            <div class="finger-icon"><i class="fa fa-hand-o-up" aria-hidden="true"></i></div>
+          </div>
+
+          <div class="service-box row">
+            <div class="icon red">
+              <i class="material-icons">storage</i>
+            </div>
+            <div class="title"><h2>Back End</h2></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            </div>
+            <button class="btn grey">Get started</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section">
+        <div class="title">
+          <h1>Good design means<br />good business</h1>
+        </div>
+        <div class="showcase-box-gp">
+          <div class="showcase-box">
+            <div class="visual"><img src="img/smarthome.jpg" alt="main visual" /></div>
+            <div class="info">Full stack application</div>
+            <div class="visual-title">Smart home dashboard</div>
+          </div>
+          <div class="showcase-box">
+            <div class="visual"><img src="img/onboard.png" alt="main visual" /></div>
+            <div class="info">UX/UI design</div>
+            <div class="visual-title">Onboard application</div>
+          </div>
+          <div class="showcase-box">
+            <div class="visual"><img src="img/booking.png" alt="main visual" /></div>
+            <div class="info">Mobile application</div>
+            <div class="visual-title">Booking system</div>
+          </div>
+          <div class="showcase-box">
+            <div class="visual"><img src="img/juice-product.png" alt="main visual" /></div>
+            <div class="info">Front End application</div>
+            <div class="visual-title">Juice product homepage</div>
+          </div>
+        </div>
+        <div class="btn-more">see more&nbsp;&#8594;</div>
+      </section>
+
+      <section class="team-section">
+        <div class="left-side">
+          <h3>Meet the team</h3>
+          <div class="title">
+            <h1>We are chilled and a laidback team</h1>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="team-photo">
+          <div class="photo-col">
+            <div class="photo" id="photo3"><img src="img/person3.png" alt="person3" /></div>
+          </div>
+          <div class="photo-col">
+            <div class="photo" id="photo1"><img src="img/person1.png" alt="person1" /></div>
+            <div class="photo" id="photo2"><img src="img/person2.png" alt="person2" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-section">
+        <div class="quote">
+          <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
+        </div>
+        <div class="name-card">
+          <div class="photo"><img src="img/person4.png" alt="carlos" /></div>
+          <div class="name">Carlos Tran</div>
+          <div class="job">The Decorate Gatsby</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Our Works</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="social-container">
+        <div class="logo">Edie</div>
+        <div class="social-gp">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
+      <div class="contact">
+        <span class="info">Want us to contact you?</span>
+        <div class="input-container">
+          <input type="text" placeholder="Email" />
+          <button class="btn blue">Join</button>
+        </div>
+      </div>
+    </footer>
+    <div class="credit">King Fung@DevChallenges.io</div>
+  </body>
+</html>
