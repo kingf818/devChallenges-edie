@@ -10,21 +10,29 @@
     <link href="ediestyle.css" rel="stylesheet" />
   </head>
   <body id="home">
+    <div class="collapse-menu" id="collapse-menu">
+      <button class="btn btn-close" onClick="toggleMenu();"><i class="material-icons">close</i></button>
+      <ul>
+        <li><a href="#home" onClick="toggleMenu();">Home</a></li>
+        <li><a href="#services" onClick="toggleMenu();">Services</a></li>
+        <li><a href="#works" onClick="toggleMenu();">Our Works</a></li>
+        <li><a href="#clients" onClick="toggleMenu();">Clients</a></li>
+        <li><a href="#contact" onClick="toggleMenu();">Contact</a></li>
+      </ul>
+    </div>
     <nav role="navigation">
       <div class="logo">Edie</div>
       <button class="btn btn-toggle" onClick="toggleMenu();"><i class="material-icons">menu</i></button>
-      <div class="collapse" id="collapse-menu">
-        <button class="btn btn-toggle" onClick="toggleMenu();"><i class="material-icons">close</i></button>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#works">Our Works</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Our Works</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <main role="main">
+    <main role="main" id="main">
       <section class="top-section">
         <div class="title row">
           <h4>Unhappy with your website?</h4>
@@ -176,7 +184,10 @@
   <script>
     function toggleMenu() {
       var menu = document.getElementById("collapse-menu");
+      var main = document.getElementById("main");
       menu.classList.toggle("show");
+
+      main.classList.toggle("fixed");
     }
   </script>
 </html>
